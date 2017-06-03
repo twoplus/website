@@ -1,0 +1,136 @@
+/*
+ *
+ * STYLE dla gabinet dentystyczny
+ *
+ */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    background-color: #fff;
+    height: 90px;
+    line-height: 90px;
+    box-shadow: 0px 5px 10px rgba(0, 90, 112, 0.36);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+header a.logo {
+    float: left;
+}
+.logo img{
+    height: 40px;
+    margin-left: 20px;
+}
+header nav {
+    float: right;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 30px;
+}
+header nav ul li{
+    
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    
+}
+
+header nav ul li:hover{
+    /*background: radial-gradient(circle, white 20px ,#e8e8e2 10px ,white 30px);*/
+    background-color: #fafafa;
+    border-left: solid 1px #D2DB0E;
+    border-right: solid 1px #D2DB0E;
+
+    
+}
+header nav ul li a {
+    height: 100%;
+    display: block;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    color: #95a0a3;
+}
+header nav ul li a:hover, header nav ul li a:focus {
+    color: #003057;
+    text-decoration: none;
+}
+
+.slider {
+    z-index: -1;
+    padding-top: 90px;
+}
+.slider, .slider ul.slider-carousel, .slider ul.slider-carousel li {
+    height: 500px;
+    /*width: 100%;*/
+    text-align: center;
+}
+.slider ul li div{
+    padding-top: 50px;
+}
+.slider ul.slider-carousel li a {
+    padding: 5px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.slider ul.slider-carousel li a:hover {
+    background-color: #D2DB0E;
+    text-decoration: none;
+}
+.indicators {
+    position: relative;
+    top: -50px;
+}
+.slider ul.indicators li{
+    padding: 0 2px;
+}
+
+.slider ul.indicators li a{
+    color: #D2DB0E;
+}
+.slider ul.indicators li a:hover{
+    color: #005A70; 
+}
+.slider ul.indicators li.selected a{
+    color: #003057; 
+}
+.slider ul.indicators li.selected a:hover{
+    color: #005A70; 
+}
+.slider li[class*="photo"] a{
+    background-color: #007FA3;
+    color: white;
+}
+.slider li[class*="photo"] a:hover{
+    color: #007FA3;
+}
+.fstphoto {
+    background: url(../img/doc.jpg);
+    background-size: cover;
+    
+}
+.sndphoto {
+    background: url(../img/dent.jpg);
+    background-size: cover;
+}
+.trdphoto {
+    background: url(../img/gab.jpg);
+    background-size: cover;
+}
+.font-highlight {
+    font-family: 'Playfair Display', serif;
+}
+.font-regular {
+    font-family: 'Open Sans', sans-serif;
+}
+.correct {
+    height: 150px;
+}
+footer {
+    height: 200px;
+    background-color: white;
+}
+footer i{
+    padding: 30px 20px;
+}
